@@ -1,0 +1,46 @@
+
+<app-navheader></app-navheader>
+<body>
+  
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-md-6 offset-md-3">
+         <!-- {{user.password|json}} -->
+        <div id="circle">
+          <i id="user" class="material-icons" color="#AC3B61">account_circle</i>
+            <p id="signin">Sign In</p>
+        <form (ngSubmit)="onLogin()">
+          
+          <!-- UserName -->
+          <mat-form-field class="full-width" appearance="outline" color="warn">
+            <mat-label>Player Name</mat-label>
+            <input [(ngModel)]="user.name" 
+            name="name" 
+             matInput placeholder="Enter Name" required/>
+          </mat-form-field>
+          
+
+          <!-- Password -->
+          <mat-form-field class="full-width" appearance="outline" color="warn">
+            <mat-label>Password</mat-label>
+            <input  [(ngModel)]="user.password" 
+            name="password" 
+            type="password" matInput placeholder="Enter Password" required/>
+          </mat-form-field>
+          
+          <div class="container text-center">
+            <button type="submit" mat-raised-button color="accent">Login</button>
+            <!-- <a href="/booking" type="submit" mat-raised-button color="accent">Login</a> -->
+          </div>
+          <div class="container text-center" style="margin-top: 20px;">
+          <a href="/registration-page">New Player Registration?</a>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+    </div>
+    </div>
+</div>  
+</body>

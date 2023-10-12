@@ -1,0 +1,160 @@
+<app-navheaderbooking></app-navheaderbooking>
+<!-- <title> Sports: Book A Facility</title> -->
+        <!--Booking Page-->
+        <!-- Booking Form -->
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+              <p id="make-a">Make A Booking</p>
+              <mat-divider style="background-color: #AC3B61;"></mat-divider>
+            
+              <form action="">
+              
+                <div class="row">
+                  <div class="col-50">
+                    
+
+                    <div id="heading">
+                      <div id="title">1</div>
+                      <div id="subtitle">General Information</div>
+                    </div>
+                    
+                    <label for="playerid">Player ID</label>
+                    <input type="text" id="id" name="id" value="{{user.id|json}}">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="{{user.name|json}}">
+                    <label for="dob">DOB</label>
+                    <input type="text" id="dob" name="dob" value="{{user.dob|json}}">
+                    <div id="note">
+                      <p>Note:</p>
+                      <ul>
+                        <li>All visitors must check in via the CBR check-in QR code. </li>
+                        <li>All patrons must abide by social distancing of 1.5 metres where possible.</li>
+                        <li>All Sport facilities must be booked prior to use, no walk-in bookings will be permitted.</li>
+                      </ul>
+                    </div>
+
+                    
+                  <div class="row">
+                    <div class="col-50">
+                      <input type="submit" value="CONFIRM" class="btn">
+                    </div>
+                    <div class="col-50">
+                      <input type="submit" value="CANCEL" class="btn">
+                    </div>
+                  </div>
+
+                  </div>
+        
+                  <div class="col-50">
+
+                    <div id="heading" >
+                      <div id="title">2</div>
+                      <div id="subtitle">Select Timeslot</div>
+                    </div>
+<!-- Calendar -->
+              <div class="movie-container">
+                <ul class="showcase">
+                  <li>
+                    <div class="seat"></div>
+                    <small>Available</small>
+                  </li>
+                  <li>
+                    <div class="seat selected"></div>
+                    <small>Selected Time</small>
+                  </li>
+                  <li>
+                    <div class="seat occupied"></div>
+                    <small>Unavailable</small>
+                  </li>    
+                </ul>
+                
+                <div class="cal-container">
+    
+                  <div>
+                      <div class="month">October</div>
+                  </div>
+    
+                  <div class="rowcal">
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day">FRI</div>
+                    <div class="day">SAT</div>
+                    <div class="day">SUN</div>
+                  </div>
+    
+                  <div class="rowcal">
+                    <div class="date">4/10</div>
+                    <div class="date">5/10</div>
+                    <div class="date">6/10</div>
+                    <div class="date">7/10</div>
+                    <div class="date">8/10</div>
+                    <div class="date">9/10</div>
+                    <div class="date">10/10</div>
+                  </div>
+    
+    
+                  <div class="rowcal">
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                      <div class="seat">10:00am</div>
+                    </div>
+                    <div class="rowcal">
+                      <div class="seat">11:00am</div>
+                      <div class="seat">11:00am</div>
+                      <div class="seat occupied">11:00am</div>
+                      <div class="seat occupied">11:00am</div>
+                      <div class="seat">11:00am</div>
+                      <div class="seat">11:00am</div>
+                      <div class="seat">11:00am</div>
+                    </div>
+                    <div class="rowcal">
+                      <div class="seat occupied">12:00pm</div>
+                      <div class="seat occupied">12:00pm</div>
+                      <div class="seat">12:00pm</div>
+                      <div class="seat">12:00pm</div>
+                      <div class="seat">12:00pm</div>
+                      <div class="seat occupied">12:00pm</div>
+                      <div class="seat occupied">12:00pm</div>
+                    </div>
+                    <div class="rowcal">
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                      <div class="seat">1:00pm</div>
+                    </div>
+                    <div class="rowcal">
+                      <div class="seat">2:00pm</div>
+                      <div class="seat">2:00pm</div>
+                      <div class="seat occupied">2:00pm</div>
+                      <div class="seat occupied">2:00pm</div>
+                      <div class="seat">2:00pm</div>
+                      <div class="seat">2:00pm</div>
+                      <div class="seat">2:00pm</div>
+                    </div>
+                    <div class="rowcal">
+                      <div class="seat occupied">3:00pm</div>
+                      <div class="seat">3:00pm</div>
+                      <div class="seat">3:00pm</div>
+                      <div class="seat occupied">3:00pm</div>
+                      <div class="seat occupied">3:00pm</div>
+                      <div class="seat occupied">3:00pm</div>
+                      <div class="seat">3:00pm</div>
+                    </div>
+                </div>
+              </div>
+                  </div>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>

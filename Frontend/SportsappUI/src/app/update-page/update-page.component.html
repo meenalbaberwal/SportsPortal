@@ -1,0 +1,86 @@
+<app-navheader></app-navheader>
+<body>
+    
+<div class="bootstrap-wrapper" >
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-6 offset-md-3">
+                <mat-card class="text-center">
+                    <mat-card-content>
+                <div class="container text-center">
+                    <img src="../../assets/logo.png" alt="sportslogo" height="200" width="300"/>
+                </div>
+                <h1 class="text-center" style="color: #AC3B61;">Update Details</h1>
+                <form >
+                    <!-- UserName -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Player Name</mat-label>
+                        <input [(ngModel)]="user.name" 
+                        name="name" 
+                         matInput placeholder="Enter Name" required/>
+                    </mat-form-field>
+                    
+                    <!-- Password -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input [(ngModel)]="user.password" name="password" 
+                        type="password" matInput placeholder="Enter Password" required/>
+                    </mat-form-field>
+
+                    <!-- Email -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email ID</mat-label>
+                        <input [(ngModel)]="user.email" name="email" 
+                        type="email" matInput placeholder="Placeholder" required/>
+                    </mat-form-field>
+
+                    <!-- Contact -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Contact No.</mat-label>
+                        <input [(ngModel)]="user.contact" name="contact" 
+                        type="tel" matInput placeholder="Placeholder" required/>
+                    </mat-form-field>
+
+                    <!-- Pan Number -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Pan Card Number</mat-label>
+                        <input [(ngModel)]="user.pan" name="pan" 
+                        matInput placeholder="Placeholder" required/>
+                    </mat-form-field>
+
+                    <!-- Date of Birth -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Date Of Birth</mat-label>
+                        <input [(ngModel)]="user.dob" name="dob" 
+                        matInput placeholder="Placeholder" required/>
+                        
+                    </mat-form-field>
+                    <!-- <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker> -->
+
+                    <!-- Age -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Age</mat-label>
+                        <input [(ngModel)]="user.age" name="age" 
+                        matInput placeholder="Placeholder" required/>
+                    </mat-form-field>
+
+                    <!-- Country -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Country</mat-label>
+                        <input [(ngModel)]="user.country" name="country" 
+                         matInput placeholder="Placeholder" required/>
+                    </mat-form-field>
+
+                    <div class="container text-center">
+                        <button type="submit" mat-raised-button color="accent">Register</button>
+                        <button type="reset" style="margin-left: 30px;" mat-raised-button color="accent">Clear form</button>
+                    </div>
+                </form>
+            </mat-card-content>
+            </mat-card>
+            </div> 
+        </div>
+    </div>
+</div>
+</body>
